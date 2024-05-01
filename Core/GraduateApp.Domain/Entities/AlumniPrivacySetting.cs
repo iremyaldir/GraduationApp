@@ -10,17 +10,14 @@ namespace GraduationApp.Domain.Entities
     public class AlumniPrivacySetting : EntityBase
     {
         public AlumniPrivacySetting() { }
-        public AlumniPrivacySetting(string displayName, string settingCode, int alumniPrivacySettingId)
+        public AlumniPrivacySetting(string displayName, string settingCode)
         {
             DisplayName = displayName;
             SettingCode = settingCode;
-            AlumniPrivacySettingId = alumniPrivacySettingId;
         }
         public string? DisplayName { get; set; }
 
         public string? SettingCode { get; set; }
-
-        public int AlumniPrivacySettingId { get; set; }
 
         public virtual ICollection<Alumni> Alumni { get; set; } = new List<Alumni>();
     }
