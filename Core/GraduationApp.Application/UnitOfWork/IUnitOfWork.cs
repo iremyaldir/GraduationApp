@@ -15,6 +15,13 @@ namespace GraduationApp.Application.UnitOfWork
         public IDepartmentRepository DepartmentRepository { get; }
         public IUserRepository UserRepository { get; }
         public IAlumniRepository AlumniRepository { get; }
+        public IAlumniPrivacySettingRepository AlumniPrivacySettingRepository { get; }
+        public IAlumniRegistrationRepository AlumniRegistrationRepository { get; } 
+        public IAlumniRoleRepository AlumniRoleRepository { get; } 
+        public IUserPrivacySettingRepository UserPrivacySettingRepository { get; }
+        public IUserRegistrationRepository UserRegistrationRepository { get; }
+        public IUserRoleRepository UserRoleRepository { get; }
+        public IRoleRepository RoleRepository { get; }
 
         Task CompleteAsync();
     }
